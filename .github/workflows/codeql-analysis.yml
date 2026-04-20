@@ -19,7 +19,9 @@ on:
     branches: [testing, develop,my-dev-v1]
   schedule:
     - cron: "00 20 * * 1"
-
+permissions:
+  security-events: write
+  contents: read
 jobs:
   analyze:
     name: Analyze
